@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" herf="./css/home.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <h1 class="text-center">Make a new poll!</h1>
+    <form action="/poll/save", method="POST">
+      <p style="font-weight: bold;float: left;">Title</p>
+      <input class="form-control" type="text" name="title" placeholder="Input title">
+      <br>
+      <p style="font-weight: bold;float: left;">Options (seperated by line):</p>
+      <textarea class="form-control" type="text" name="option" placeholder="Input title" style="height: 100px;" row="4"></textarea>
+      <br>
+      <button type="submit" class="btn btn-primary btn-lg" style="float: left;">Make</button>
+      <input type="text" name="name" value={{user}} style="display: none"/>
+    </form>
+  </div>
+</body>

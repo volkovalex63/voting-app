@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" herf="./css/home.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <form action='{{url}}' method="POST">
+      <h1>{{title}}</h1>
+      <div class="form-group" >
+        <label for="email" style="float: left;">Email address:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd" style="float: left;">Password:</label>
+        <input type="password" class="form-control" id="pwd" name="password" required>
+      </div>
+      <button type="submit" class="btn btn-default">{{btnName}}</button>
+    </form>
+  </div>
+</body>

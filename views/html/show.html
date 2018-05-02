@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" herf="./css/home.css">
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 style="text-align: left;">Title</h4>
+        <p style="text-align: left;">I'like to vote for...</p>
+        <form class="form-group" action="">
+          <select class="form-control" id="sel1" placeholder="Choose an option..." ng-model="selOption">
+            <option ng-repeat = "x in option">{{x}}</option>
+          </select>
+          <br/>
+          <button class="btn btn-primary btn-lg form-control" ng-click = "submit()">Submit</button>
+          <br/>
+          <br/>
+          <button class="btn btn-success btn-lg form-control" ng-click = "share()" >Share</button>
+          <br>
+          <br/>
+          <button class="btn btn-danger btn-lg form-control" ng-click = "remove()">remove this poll</button>
+        </form>
+      </div>
+      <div class="col-sm-6" id="showChart" style="width: 520px; height: 400px;">
+      </div>
+    </div>
+  </div>
+</body>
